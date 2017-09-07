@@ -16,4 +16,13 @@ window['_fs_namespace'] = 'FS';
     d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
     ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
 })(window,document,window['_fs_namespace'],'script','user');
+    
+// This is an example script - don't forget to change it!
+FS.identify('THE_ID_THAT_YOU_USE_IN_YOUR_APP_FOR_THIS_USER', {
+  displayName: 'Daniel Falko',
+  email: 'danielfalko@example.com',
+  // TODO: Add your own custom user variables here, details at
+  // http://help.fullstory.com/develop-js/setuservars.
+  reviewsWritten_int: 14,
+});
 </script>
