@@ -47,9 +47,15 @@
         let h1Element = document.createElement('h1');
         
         h1Element.innerText = 'Josh Test';
+        h1Element.id = 'josh-test';
         fragment.appendChild(h1Element);
         bodyElement.appendChild(fragment);
       }, 10000);
+      
+      setTimeout(function () {
+        let h1Element = document.querySelector('#josh-test');
+        h1Element.remove();
+      }, 15000);
     </script>
 	</body>
 </html>
