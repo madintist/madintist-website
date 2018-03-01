@@ -77,7 +77,7 @@
       <script>
        var jsMenuEl = document.querySelector('#js-menu')
 
-       jsMenuEl.addEventHandler('mouseenter', function (event) {
+       jsMenuEl.addEventListener('mouseenter', function (event) {
          var jsMenuItemEls = document.querySelectorAll('#js-menu .menu-item')
          jsMenuItemEls = Array.prototype.slice.call(jsMenuItemEls, 0)
 
@@ -86,7 +86,7 @@
          })
        })
 
-       jsMenuEl.addEventHandler('mouseleave', function (event) {
+       jsMenuEl.addEventListener('mouseleave', function (event) {
          var jsMenuItemEls = document.querySelectorAll('#js-menu .menu-item')
          jsMenuItemEls = Array.prototype.slice.call(jsMenuItemEls, 0)
 
