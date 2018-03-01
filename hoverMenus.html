@@ -74,6 +74,28 @@
     </section>
 
     <footer>
+      <script>
+       var jsMenuEl = document.querySelector('#js-menu')
+
+       jsMenuEl.addEventHandler('mouseenter', function (event) {
+         var jsMenuItemEls = document.querySelectorAll('#js-menu .menu-item')
+         jsMenuItemEls = Array.prototype.slice.call(jsMenuItemEls, 0)
+
+         jsMenuItemEls.forEach(function (jsMenuItemEl) {
+           jsMenuItemEl.style.display = 'block'
+         })
+       })
+
+       jsMenuEl.addEventHandler('mouseleave', function (event) {
+         var jsMenuItemEls = document.querySelectorAll('#js-menu .menu-item')
+         jsMenuItemEls = Array.prototype.slice.call(jsMenuItemEls, 0)
+
+         jsMenuItemEls.forEach(function (jsMenuItemEl) {
+           jsMenuItemEl.style.display = 'none'
+         })
+       })
+      </script>
+
       <script type='text/javascript'>
        window.__lo_site_id = 83052;
 
