@@ -65,7 +65,21 @@
 
     <footer>
       <script>
-        // TODO: Write script
+        var consoleErrorButtonEl = document.querySelector('#console-error-test');
+        var consoleLogButtonEl = document.querySelector('#console-log-test');
+        var consoleWarnButtonEl = document.querySelector('#console-warn-test');
+
+        consoleErrorButtonEl.addEventListener('click', function () {
+          console.error('This is an example error.');
+        });
+
+        consoleLogButtonEl.addEventListener('click', function () {
+          console.log('This is an example log.');
+        });
+
+        consoleWarnButtonEl.addEventListener('click', function () {
+          console.warn('This is an example warning.');
+        });
       </script>
 
       <script type='text/javascript'>
